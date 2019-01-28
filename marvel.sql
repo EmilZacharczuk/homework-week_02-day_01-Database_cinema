@@ -60,17 +60,21 @@ INSERT INTO movies (title, year, show_time) VALUES ('Ant-Man and the Wasp', 2018
 
 
 -- Return ALL the data in the 'movies' table.
-SELECT * FROM movies;
--- Return ONLY the name column from the 'people' table
-SELECT name FROM people;
--- Oops! Someone at CodeClan spelled Anthony's name wrong! Change it to reflect the proper spelling ('Anthatony Starkes' should be 'Anthony Starke').
-UPDATE people SET name = 'Anthony Starke' WHERE name = 'Anthatony Starkes';
-SELECT * FROM people;
--- Return ONLY your name from the 'people' table.
-SELECT name FROM people WHERE name = 'Emil Zacharczuk'
+-- SELECT * FROM movies;
+-- -- Return ONLY the name column from the 'people' table
+-- SELECT name FROM people;
+-- -- Oops! Someone at CodeClan spelled Anthony's name wrong! Change it to reflect the proper spelling ('Anthatony Starkes' should be 'Anthony Starke').
+-- UPDATE people SET name = 'Anthony Starke' WHERE name = 'Anthatony Starkes';
+-- SELECT * FROM people;
+-- -- Return ONLY your name from the 'people' table.
+-- SELECT name FROM people WHERE name = 'Emil Zacharczuk'
 -- The cinema is showing 'Batman Begins', but Batman is DC, not Marvel! Delete the entry from the 'movies' table.
-
+-- DELETE FROM movies WHERE title = 'Batman Begins';
+-- SELECT * FROM movies;
 -- Create a new entry in the 'people' table with the name of one of the instructors.
+INSERT INTO people (name) VALUES ('Louise Camlin');
+SELECT * FROM people;
+
 -- Craig Morton has decided to hijack our movie evening, remove him from the table of people.
 -- The cinema has just heard that they will be holding an exclusive midnight showing of 'Captain Marvel'!! Create a new entry in the 'movies' table to reflect this.
 -- The cinema would also like to make the Guardians movies a back to back feature. Find out the show time of "Guardians of the Galaxy" and set the show time of "Guardians of the Galaxy 2" to start two hours later.
