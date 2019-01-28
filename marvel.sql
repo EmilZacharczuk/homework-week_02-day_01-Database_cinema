@@ -72,9 +72,12 @@ INSERT INTO movies (title, year, show_time) VALUES ('Ant-Man and the Wasp', 2018
 -- DELETE FROM movies WHERE title = 'Batman Begins';
 -- SELECT * FROM movies;
 -- Create a new entry in the 'people' table with the name of one of the instructors.
-INSERT INTO people (name) VALUES ('Louise Camlin');
-SELECT * FROM people;
-
+-- INSERT INTO people (name) VALUES ('Louise Camlin');
+-- SELECT * FROM people;
 -- Craig Morton has decided to hijack our movie evening, remove him from the table of people.
+-- DELETE FROM people WHERE name = 'Craig Morton';
+-- SELECT name FROM people;
 -- The cinema has just heard that they will be holding an exclusive midnight showing of 'Captain Marvel'!! Create a new entry in the 'movies' table to reflect this.
+INSERT INTO movies (title, year, show_time) VALUES ('Captain Marvel', 2019, '00:00');
+SELECT title FROM movies WHERE year = 2019;
 -- The cinema would also like to make the Guardians movies a back to back feature. Find out the show time of "Guardians of the Galaxy" and set the show time of "Guardians of the Galaxy 2" to start two hours later.
