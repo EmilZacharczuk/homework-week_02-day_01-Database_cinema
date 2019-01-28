@@ -84,3 +84,10 @@ SELECT title FROM movies WHERE year = 2019;
 SELECT show_time FROM movies WHERE title = 'Guardians of the Galaxy';
 UPDATE movies SET show_time = '14:55' WHERE title = 'Guardians of the Galaxy 2';
 SELECT show_time FROM movies WHERE title = 'Guardians of the Galaxy 2';
+-- Research how to delete multiple entries from your table in a single command.
+DELETE FROM people WHERE name IN ('Gábor Budai','Emil Zacharczuk');
+SELECT * from people;
+DELETE FROM movies WHERE id IN (1,2,3,4,5);
+SELECT * FROM movies;
+DELETE FROM movies WHERE id IN (6, 10);
+SELECT * FROM movies;
