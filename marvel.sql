@@ -64,8 +64,12 @@ SELECT * FROM movies;
 -- Return ONLY the name column from the 'people' table
 SELECT name FROM people;
 -- Oops! Someone at CodeClan spelled Anthony's name wrong! Change it to reflect the proper spelling ('Anthatony Starkes' should be 'Anthony Starke').
+UPDATE people SET name = 'Anthony Starke' WHERE name = 'Anthatony Starkes';
+SELECT * FROM people;
 -- Return ONLY your name from the 'people' table.
+SELECT name FROM people WHERE name = 'Emil Zacharczuk'
 -- The cinema is showing 'Batman Begins', but Batman is DC, not Marvel! Delete the entry from the 'movies' table.
+
 -- Create a new entry in the 'people' table with the name of one of the instructors.
 -- Craig Morton has decided to hijack our movie evening, remove him from the table of people.
 -- The cinema has just heard that they will be holding an exclusive midnight showing of 'Captain Marvel'!! Create a new entry in the 'movies' table to reflect this.
